@@ -31,9 +31,28 @@ let counterSlice = createSlice({
 
 export let counterSliceAction = counterSlice.actions;
 
+// slice to maintain authentication data
+let authSlice = createSlice({
+  name: "authenticationSlice",
+  initialState: { isAuthenticated: false },
+  reducers: {
+    login: (state) => {
+      state.isAuthenticated = true;
+    },
+    logout: (state) => {
+      state.isAuthenticated = false;
+    },
+  },
+});
+
+export let authSliceAction = authSlice.actions;
+
 // centralized store to manage app wide state
 let store = configureStore({
-  reducer: { counterSliceReducer: counterSlice.reducer },
+  reducer: {
+    counterSliceReducer: counterSlice.reducer,
+    authSliceReducer: authSlice.reducer,
+  },
 });
 
 export default store;

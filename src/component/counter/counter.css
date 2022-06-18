@@ -3,9 +3,10 @@
   width: 50%;
   margin: 100px auto;
   padding: 20px;
-  color: white;
+
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
+  background-color: whitesmoke;
 }
 
 /* button container  */

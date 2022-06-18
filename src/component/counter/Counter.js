@@ -1,7 +1,7 @@
 import React from "react";
 import "./counter.css";
 import { useSelector, useDispatch } from "react-redux";
-import { counterSliceAction } from "../store/index";
+import { counterSliceAction } from "../../store/index";
 
 const Counter = () => {
   let dispatch = useDispatch();
@@ -31,7 +31,7 @@ const Counter = () => {
   };
 
   return (
-    <div className="counter-sec bg-primary">
+    <div className="counter-sec">
       <h1 className="text-center text-capitalize ">counter</h1>
       {counterVisibility && (
         <h3 className="text-center text-capitalize">{counterValue}</h3>
@@ -39,6 +39,14 @@ const Counter = () => {
       <div className="text-center control-btn">
         <button className="btn btn-success" onClick={increment}>
           increment
+        </button>
+        <button
+          onClick={() => {
+            increase();
+          }}
+          className="btn btn-primary text-capitalize text-center"
+        >
+          increase by 5
         </button>
         <button
           className="btn btn-danger"
@@ -49,7 +57,7 @@ const Counter = () => {
           decrement
         </button>
       </div>
-      <div className="d-flex align-items-center justify-content-center mt-4">
+      {/* <div className="d-flex align-items-center justify-content-center mt-4">
         <button
           onClick={() => {
             increase();
@@ -58,7 +66,7 @@ const Counter = () => {
         >
           increase by 5
         </button>
-      </div>
+      </div> */}
       <div className="d-flex align-items-center justify-content-center mt-4">
         <button
           onClick={() => {
