@@ -1,7 +1,7 @@
 import "./header.css";
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { authSliceAction } from "../../store/index";
+import { authSliceAction } from "../../store/authSlice";
 
 const Header = () => {
   let dispatch = useDispatch();
