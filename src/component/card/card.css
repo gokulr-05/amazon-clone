@@ -1,0 +1,14 @@
+.card-num-bucket {
+  background-color: rgba(0, 0, 0, 0.162);
+}
+
+.card-sec {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.card-num {
+  font-size: 30px;
+  padding: 50px;
+  font-weight: 100 !important;
+}
