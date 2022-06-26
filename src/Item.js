@@ -1,8 +1,18 @@
 import { useState } from "react";
 
 const Item = ({ img, title, summary, ratings }) => {
+  let color = ratings > 8 ? "green" : "red";
+  let [showSummary, setShowSummary] = useState(false);
   let [likes, setLikes] = useState(0);
   let [dislikes, setDislikes] = useState(0);
+
+  let showSummaryHandler = () => {
+    setShowSummary(true);
+  };
+
+  let hideSummaryHandler = () => {
+    setShowSummary(false);
+  };
   let likeHandler = (e) => {
     e.preventDefault();
     setLikes((prev) => {
@@ -27,20 +37,55 @@ const Item = ({ img, title, summary, ratings }) => {
         />
       </div>
       <h2 className="text-capitalize text-center">{title}</h2>
-      <p className="text-capitalize text-center">⭐{ratings}</p>
-      <div className="w-100">
-        <p
-          style={{
-            width: "50%",
-            margin: "auto",
-            textJustify: "inter-word",
-            textAlign: "center",
-            textTransform: "capitalize",
-          }}
-        >
-          {summary}
+      <div
+        className="my-4"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "5px",
+        }}
+      >
+        <p style={{ color: color }} className="text-capitalize text-center m-0">
+          ⭐{ratings}
         </p>
+        {!showSummary && (
+          <button
+            onClick={() => {
+              showSummaryHandler();
+            }}
+          >
+            {" "}
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        )}
+        {showSummary && (
+          <button
+            onClick={() => {
+              hideSummaryHandler();
+            }}
+          >
+            {" "}
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+        )}
       </div>
+      {showSummary && (
+        <div className="w-100">
+          <p
+            style={{
+              width: "50%",
+              margin: "auto",
+              textJustify: "inter-word",
+              textAlign: "center",
+              textTransform: "capitalize",
+            }}
+          >
+            {summary}
+          </p>
+        </div>
+      )}
+
       <div
         style={{ margin: "20px" }}
         className="text-center d-flex align-items-center justify-content-center gap-5"
