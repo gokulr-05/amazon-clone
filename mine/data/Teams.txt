@@ -1,0 +1,36 @@
+t01 - Arsenal, 
+t02 - aston villa, 
+t03 - brentford, 
+t04 - brighton, 
+t05 - burnley, 
+t06 - chelsea, 
+t07 - crystal palace
+t08 - everton, 
+t09 - leeds, 
+t10 - leicester, 
+t11 - liverpool, 
+t12 - man city, 
+t13 - man utd, 
+t14 - newcastle
+t15 - norwich, 
+t16 - soton, 
+t17 - spurs, 
+t18 - watford, 
+t19 - whu, 
+t20 - wolves 
+
+
+Germany: https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png
+Iceland: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Iceland.svg/1280px-Flag_of_Iceland.svg.png
+England: https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/2560px-Flag_of_England.svg.png
+Spain: https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.svg.png
+Scotland: https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Flag_of_Scotland.svg/1200px-Flag_of_Scotland.svg.png
+Ghana: https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1200px-Flag_of_Ghana.svg.png
+Switzerland: https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg
+Norway: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/2560px-Flag_of_Norway.svg.png
+France: https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png
+Gabon: https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Flag_of_Gabon.svg/1280px-Flag_of_Gabon.svg.png
+Brazil: https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/2560px-Flag_of_Brazil.svg.png
+Argentina: https://upload.wikimedia.org/wikipedia/en/4/4d/Flag_of_Argentina_%28bordered%29.png
+Netherlands: https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1280px-Flag_of_the_Netherlands.svg.png
+Finland: https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Finland.png

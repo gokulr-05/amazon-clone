@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
-const Item = ({ id, img, title, summary, ratings, reactionArrHandler }) => {
+const Item = ({ img, title, summary, ratings }) => {
   let color = ratings > 8 ? "green" : "red";
   let [showSummary, setShowSummary] = useState(false);
   let [likes, setLikes] = useState(0);
@@ -44,7 +43,7 @@ const Item = ({ id, img, title, summary, ratings, reactionArrHandler }) => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          gap: "15px",
+          gap: "5px",
         }}
       >
         <p style={{ color: color }} className="text-capitalize text-center m-0">
@@ -52,38 +51,24 @@ const Item = ({ id, img, title, summary, ratings, reactionArrHandler }) => {
         </p>
         {!showSummary && (
           <button
-            style={{ height: "30px", width: "30px", padding: "0", margin: "0" }}
-            className="btn btn-primary "
             onClick={() => {
               showSummaryHandler();
             }}
           >
-            <i className="fa-solid fa-chevron-down p-0 m-0"></i>
+            {" "}
+            <i class="fa-solid fa-chevron-down"></i>
           </button>
         )}
         {showSummary && (
           <button
-            style={{ height: "30px", width: "30px", padding: "0", margin: "0" }}
-            className="btn btn-primary"
             onClick={() => {
               hideSummaryHandler();
             }}
           >
-            <i className="fa-solid fa-chevron-up"></i>
+            {" "}
+            <i class="fa-solid fa-chevron-up"></i>
           </button>
         )}
-
-        <Link
-          onClick={() => {
-            reactionArrHandler([
-              { name: "likes", count: likes },
-              { name: "dislikes", count: dislikes },
-            ]);
-          }}
-          to={`/${id}/movieDetails`}
-        >
-          <i className="fa-solid fa-circle-info fs-4"></i>
-        </Link>
       </div>
       {showSummary && (
         <div className="w-100">
@@ -106,15 +91,11 @@ const Item = ({ id, img, title, summary, ratings, reactionArrHandler }) => {
         className="text-center d-flex align-items-center justify-content-center gap-5"
       >
         <div className="d-flex align-items-center justify-content-center gap-3">
-          <button className="btn btn-success" onClick={likeHandler}>
-            👍
-          </button>
+          <button onClick={likeHandler}>👍</button>
           <p className="m-0">{likes}</p>
         </div>
         <div className="d-flex align-items-center justify-content-center gap-3">
-          <button className="btn btn-danger" onClick={dislikeHandler}>
-            👎
-          </button>
+          <button onClick={dislikeHandler}>👎</button>
           <p className="m-0">{dislikes}</p>
         </div>
       </div>

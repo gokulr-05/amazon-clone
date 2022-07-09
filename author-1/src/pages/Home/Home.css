@@ -1,0 +1,35 @@
+/*
+    This is a sample CSS file for the home page.
+    Kindly replace the CSS code written below with your code.
+    You are also allowed to create SASS or LESS files to style your code.
+*/
+
+
+.container {
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.header img {
+    width: 20%;
+}
+
+.instructions {
+    width: 100%;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 100;
+}
