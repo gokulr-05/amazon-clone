@@ -210,15 +210,16 @@ const ProductDetails = ({ openCustomerModal }) => {
               >
                 <h5>Product Ratings and Reviews</h5>
                 <div className="py-3 row d-flex align-items-center ">
-                  <div className="col-xxl-3 col-xl-3 col-lg-12 col-3">
-                    <div className="text-success d-flex align-items-center justify-content-start gap-1 text-center">
+                  {/* <div className="col-xxl-3 col-xl-3 col-lg-12 col-3"> */}
+                  <div className=" col-10 ">
+                    <div className="text-success d-flex align-items-center justify-content-center gap-1 text-center">
                       <h1 className="m-0">{rating}</h1>
 
                       <h1 className="m-0 pb-2">
                         <i class="ps-1 fa fa-star fs-3" aria-hidden="true"></i>
                       </h1>
                     </div>
-                    <div>
+                    <div className="text-center">
                       <p
                         className="m-0"
                         style={{
@@ -241,7 +242,8 @@ const ProductDetails = ({ openCustomerModal }) => {
                       </p>
                     </div>
                   </div>
-                  <div className="  col-xxl-9 col-xl-9 col-lg-12 col-9">
+                  {/* <div className="  col-xxl-9 col-xl-9 col-lg-12 col-9"> */}
+                  <div className="   col-10">
                     <div className="">
                       <div className="row py-2 d-flex align-items-center">
                         <div className="col-3">
