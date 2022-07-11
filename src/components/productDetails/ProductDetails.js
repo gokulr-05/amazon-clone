@@ -254,7 +254,7 @@ const ProductDetails = ({ openCustomerModal }) => {
                               fontWeight: "500",
                             }}
                           >
-                            Excellent
+                            Good
                           </p>
                         </div>
                         <div
@@ -286,7 +286,7 @@ const ProductDetails = ({ openCustomerModal }) => {
                               fontWeight: "500",
                             }}
                           >
-                            Average
+                            Avg
                           </p>
                         </div>
                         <div
