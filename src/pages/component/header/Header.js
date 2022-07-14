@@ -13,7 +13,7 @@ const Header = () => {
         </div>
 
         {/* header searchbar  */}
-        <div className="col-lg-7 col-md-6 col-sm-5 col-5 d-flex align-items-center">
+        <div className="col-xxl-7 col-lg-6 col-md-5 col-sm-5 col-5 d-flex align-items-center">
           <div className="header-searchbar-container   ">
             <input type="text" className="header-searchbar ps-2 " />
             <button className="search-btn">
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
 
         {/* header navigation link */}
-        <div className="col-lg-3 col-md-4 col-sm-5 col-5  m-0">
+        <div className="col-xxl-3 col-lg-4 col-md-5 col-sm-5 col-5  m-0">
           <div className="row headerNavLink">
             {/* sign in  */}
             <div className="col-3  text-center">

@@ -6,6 +6,9 @@
 .header-area {
   height: 80px;
   background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header-sec {
@@ -61,4 +64,5 @@
 
 .header-little-text {
   color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
 }
