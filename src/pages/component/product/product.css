@@ -1,0 +1,12 @@
+.product-area {
+  margin-top: -400px;
+  width: 100%;
+}
+
+.product-sec {
+  width: 95%;
+  margin: 0px auto;
+  /* background-color: rgb(220, 220, 220); */
+  /* position: relative; */
+  /* z-index: 10 !important; */
+}
