@@ -2,8 +2,12 @@ import "./header.css";
 import React from "react";
 import logo from "../../../assets/amazon-logo.jpg";
 import { Outlet, Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  let basket = useSelector((state) => {
+    return state.productSliceReducer.basket;
+  });
   return (
     <div>
       <nav className="header-area">
@@ -22,7 +26,7 @@ const Header = () => {
             <div className="header-searchbar-container   ">
               <input type="text" className="header-searchbar ps-2 " />
               <button className="search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-magnifying-glass"></i>
               </button>
             </div>
           </div>
@@ -66,8 +70,8 @@ const Header = () => {
                   to="/checkout"
                   className="header-nav-link d-flex align-items-center justify-content-center gap-2"
                 >
-                  <i class="fa-solid fa-basket-shopping fs-3 header-nav-1 text-white"></i>
-                  <h6 className="m-0 header-nav-2">0</h6>
+                  <i className="fa-solid fa-basket-shopping fs-3 header-nav-1 text-white"></i>
+                  <h6 className="m-0 header-nav-2">{basket.length}</h6>
                 </Link>
               </div>
             </div>

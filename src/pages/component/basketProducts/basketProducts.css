@@ -1,0 +1,20 @@
+.basket-products-area {
+  width: 100%;
+  padding: 0px 20px;
+  background-color: whitesmoke;
+  max-height: 100%;
+  min-height: 100vh;
+}
+
+.basket-subtotal {
+  background-color: rgba(255, 255, 255, 0.638);
+  border: 2px solid gold;
+  border-radius: 5px;
+}
+
+.checkout-btn {
+  background-color: gold;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-width: 1.2px;
+  border-style: solid;
+}

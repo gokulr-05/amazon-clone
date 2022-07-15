@@ -1,0 +1,21 @@
+.basketProductItem-area {
+  width: 100%;
+  /* border: 1.2px solid black; */
+}
+
+.product-item-img-container {
+  height: 100%;
+  width: 100%;
+}
+
+.basket-pic {
+  height: 100%;
+  width: 100%;
+}
+
+.remove-basket {
+  background-color: gold;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-width: 1.2px;
+  border-style: solid;
+}
