@@ -1,0 +1,51 @@
+.login-area {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.login-sec {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-logo {
+  height: 35px;
+}
+
+.login-form {
+  padding: 20px;
+  width: 340px;
+  border: 1.2px solid rgba(0, 0, 0, 0.208);
+}
+.login-inp {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: #f0c14b;
+  border-width: 1px;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 3px;
+}
+
+.login-para {
+  font-size: 12px;
+}
+
+.signup-btn {
+  width: 100%;
+  background-color: whitesmoke;
+  border-width: 1px;
+  border-color: #a88734 #9c7e31 #846a29;
+  border-radius: 3px;
+}

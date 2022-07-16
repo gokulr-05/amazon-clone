@@ -6,11 +6,6 @@ import { useSelector } from "react-redux";
 import { Navbar } from "react-bootstrap";
 
 const Header = () => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   let basket = useSelector((state) => {
     return state.productSliceReducer.basket;
   });
@@ -21,7 +16,6 @@ const Header = () => {
         <div className="header-sec row py-2  ">
           {/* header logo   */}
           <div className="col-lg-1 col-md-2 col-sm-3 col-3 h-100 ">
-            {/* <div className="col-lg-1 col-md-2 col-sm-2 col-2  header-logo-container"> */}
             <Link to="/">
               <img className="header-logo" src={logo} alt="amazon-logo" />
             </Link>
@@ -29,7 +23,6 @@ const Header = () => {
 
           {/* header searchbar  */}
           <div className="col-lg-6 col-md-5 col-sm-5 col-6 ">
-            {/* <div className="col-xxl-7 col-lg-6 col-md-5 col-sm-5 col-3 "> */}
             <div className="header-searchbar-container  ">
               <input type="text" className="header-searchbar " />
               <button className="search-btn">
@@ -40,7 +33,6 @@ const Header = () => {
 
           {/* header navigation link */}
           <div className="col-sm-4 col-3  m-0">
-            {/* <div className="col-xxl-3 col-lg-4 col-md-5 col-sm-5 col-3  m-0"> */}
             <div className="row headerNavLink d-flex justify-content-end">
               {/* sign in  */}
               <div className="col-3 d-md-block d-none text-center">
