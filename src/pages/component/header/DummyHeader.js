@@ -1,14 +1,28 @@
 import "./dummyHeader.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "../../../assets/amazon-logo.jpg";
 import { Outlet, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Navbar } from "react-bootstrap";
+import { useDispatch } from "react-redux";
+import { productSliceAction } from "../../../store/productSlice/productSlice";
 
 const Header = () => {
+  let [searchText, setSearchText] = useState("");
+  let dispatch = useDispatch();
+
   let basket = useSelector((state) => {
     return state.productSliceReducer.basket;
   });
+
+  let onChangeHandler = (e) => {
+    setSearchText(e.target.value);
+  };
+
+  useEffect(() => {
+    dispatch(productSliceAction.searchProducts({ searchText: searchText }));
+  }, [searchText, dispatch]);
+
   return (
     <div>
       <nav className="header-area">
@@ -24,7 +38,14 @@ const Header = () => {
           {/* header searchbar  */}
           <div className="col-lg-6 col-md-5 col-sm-5 col-6 ">
             <div className="header-searchbar-container  ">
-              <input type="text" className="header-searchbar " />
+              <input
+                value={searchText}
+                onChange={(e) => {
+                  onChangeHandler(e);
+                }}
+                type="text"
+                className="header-searchbar "
+              />
               <button className="search-btn">
                 <i className="fa-solid fa-magnifying-glass"></i>
               </button>

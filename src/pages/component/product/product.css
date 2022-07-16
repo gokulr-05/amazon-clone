@@ -10,3 +10,19 @@
   /* position: relative; */
   /* z-index: 10 !important; */
 }
+
+.no-products {
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  background-color: white;
+  width: 80%;
+  margin-top: -400px;
+  /* z-index: 200; */
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -12,6 +12,20 @@ let productSliceData = createSlice({
     RemoveFromBasket: (state, action) => {
       state.basket.splice(action.payload.ind, 1);
     },
+
+    searchProducts: (state, action) => {
+      let searchText = action.payload.searchText.trim();
+      console.log("searchText=", searchText);
+      if (searchText !== "") {
+        let filteredProducts = state.productData.filter((val, index, arr) => {
+          return val.title.toLowerCase().includes(searchText.toLowerCase());
+        });
+        console.log("filteredProducts=", filteredProducts);
+        state.productData = filteredProducts;
+      } else {
+        state.productData = data;
+      }
+    },
   },
 });
 
