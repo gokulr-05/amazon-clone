@@ -1,12 +1,15 @@
 import React from "react";
 import "./login.css";
 import pic from "../../../assets/amazon-login-logo.png";
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className="login-area">
       <div className="login-sec">
         {/* logo  */}
-        <img src={pic} alt="logo" className="login-logo" />
+        <Link to="/">
+          <img src={pic} alt="logo" className="login-logo" />
+        </Link>
 
         {/* login form  */}
         <div className="login-form">
