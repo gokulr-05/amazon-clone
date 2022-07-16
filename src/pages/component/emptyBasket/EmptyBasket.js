@@ -2,7 +2,7 @@ import React from "react";
 import "./emptyBasket.css";
 const EmptyBasket = () => {
   return (
-    <div className="empty-basket-area">
+    <div className="empty-basket-area p-3">
       <h1>Your Basket is Empty</h1>
       <p>
         Your Basket has no Item. Click "Add To Basket" of the products to Buy
